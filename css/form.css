@@ -4,6 +4,36 @@
 /* form styling */
 
 
+body {
+
+	font-size:larger; /* increase font size for easier reading */
+
+
+}
+
+label {
+
+	margin-right: .3em;
+	width: 6.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;
+}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+}
+
+	
+
+#formcol1 li {   
+	list-style:none;
+}
+
+
 #wrapper {
 	width: 60%;
 	margin-left:4%;
@@ -16,12 +46,13 @@ div#formcol1 {
 }
 
 div#formcol1 label {
+
 	float:left;
 	width:8.3em;
-	text-align:left;
+	text-align:right;
 	display:block;
 	padding-right:.3em;	
-	background:#E0E0DD;
+	/*background:#E0E0DD;*/ /* commenting out gray background */
 	clear:right;
 	}
 	
@@ -30,12 +61,14 @@ div#formcol1 ul li {
 	list-style-type:none;
 	margin-left:-2em;
 	margin-bottom:.4em;
-	}
+	padding-top: 1%; /* adding padding so text isnt so close together and hard to read */
+
+}
 
 	
 div#formcol1 input {
 	
-	margin-left:1.5em;
+	margin-left:1em;
 	text-align:left;
 	display:block;
 	clear:right;
@@ -47,23 +80,32 @@ div#formcol1 input {
 
 #multchoice {
 	clear:left;
-	margin-left:1%;	
+	padding-top: 3%; /* adding padding */
 }
 
 #multchoice input, #multchoice span {
 	float:left;
+	
 }
 
 #multchoice span {	
-	margin: 0 .3em;
+	margin: 0 .1em; /* slightly decreased margin */
 }
 
 .submit-button {
 	margin:2em 0;
-	float:right;
-	width:70%;
+	float:left; /* making button float left to match everything else */
+
 }
 
+.button{ /* adding styling for button so its bigger */
+
+	font-weight:120%;
+	font-size:large;
+	padding:3%;
+
+
+}
 
 		
 
